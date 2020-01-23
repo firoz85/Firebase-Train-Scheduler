@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <title>Firebase Assignment - Train Scheduler</title>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">All Aboard The Express Train - Western Australia</h1>
+        <p class="lead">Sample times table- not real times</p>
+        <hr class="my-4">
+        <h3 class="card-title" id="time"></h3>
+    </div>
+    <div class="panel panel-primary">
+        <!-- Firebase panel Content-->
+        <div>
+            <h3 class="card-title text-center">Current Train Schedule</h3>
+        </div>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th> Train Name</th>
+                    <th> Destination</th>
+                    <th> Frequency(min)</th>
+                    <th> Next Arrival</th>
+                    <th> Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody id="table-info">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- New Train Add section -->
+    <div class="panel">
+        <div>
+            <h3 class="card-title text-center">Add A Train</h3>
+            <hr class="my-4">
+        </div>
+
+        <div class="trainadd">
+            <div class="form-group">
+                <label for="trainNameInput"><b>Train Name:</b></label>
+                <input type="text" class="form-control" id="trainNameInput" placeholder="Enter Train Name Here" />
+            </div>
+
+            <div class="form-group">
+                <label for="destinationInput"><b>Destination:</b></label>
+                <input type="text" class="form-control" id="destinationInput" placeholder="Where To" />
+            </div>
+
+            <div class="form-group">
+                <label for="firstTrainTimeInput"><b>First Train Time (HH:mm - Military Time):</b></label> <br>
+                <input type="time" class="form-control" id="firstTrainTimeInput" placeholder="00:00" />
+            </div>
+
+            <div class="form-group">
+                <label for="frequencyInput"><b>Frequency(min):</b></label>
+                <input type="number" class="form-control" id="frequencyInput"
+                    placeholder="Enter Value Of Minutes (Not 0)" />
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+
+        </div>
+    </div>
+    <!-- Footer -->
+
+    <footer class="py-5 bg-dark">
+        <p class="m-0 text-center text-white">Technologies: Html - CSS - Bootstrap - Responsive - Javascript - jquery - MomentJs  -Firebase</p>
+    </footer>
+    <!-- Added link to moment -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.18.1/moment.min.js"></script>
+    <!-- Added link to Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <!-- Added link to Javascript-->
+    <script src="assets/javascript/app.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

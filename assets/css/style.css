@@ -1,0 +1,91 @@
+body {
+    margin: 2% 5%;
+}
+
+
+.panel, .jumbotron {
+    border: 2px solid #151516 !important;
+    border-radius: 10px;
+}
+.panel {
+    margin: 2% 2%;
+}
+.trainadd {
+    margin: 2% 2%;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	.jumbotron {
+		width: 94%;
+	}
+
+	.panel {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+    .trainadd {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+  footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 768px or less */
+@media screen and (max-width: 768px) {
+  
+	.jumbotron {
+		width: 94%;
+	}
+
+	.panel {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+    .trainadd {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+  footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 640px or less */
+@media screen and (max-width: 640px) {
+  
+	.jumbotron {
+		width: 94%;
+	}
+
+	.panel {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+    .trainadd {
+		width: 94%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		
+	}
+  footer {
+		padding: 1% 4%;
+	}
+}
